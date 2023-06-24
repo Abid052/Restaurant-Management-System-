@@ -60,9 +60,9 @@ void loginUser(void) {
 
     while (fscanf(file, "%s %s %s %s", user.first_name, user.last_name, user.username, user.password) != EOF) {
         if (strcmp(username, user.username) == 0 && strcmp(password, user.password) == 0) {
-            printf("Login successful.\n");
-            isLoggedIn = 1;
-            break;
+             printf("Login successful.\n");
+             isLoggedIn = 1;
+             break;
         }
     }
 
