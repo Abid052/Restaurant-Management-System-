@@ -69,7 +69,7 @@ void display_menu(void) {
 void save_choices( char* filename, int choices[], int numChoices, float totalAmount, int quantities[], char phoneNumber[] ) {
     FILE* file = fopen(filename, "w");
     if (file == NULL) {
-        printf("Failed to open the file.\n");
+        printf("File Doesnot Exist.\n");
         return;
     }
 
@@ -90,7 +90,7 @@ void save_choices( char* filename, int choices[], int numChoices, float totalAmo
 void display_file_info( char* filename) {
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Failed to open the file.\n");
+        printf("File Doesnot Exist.\n");
         return;
     }
 
