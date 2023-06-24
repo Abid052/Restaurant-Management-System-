@@ -7,8 +7,8 @@
 
 
 int main(void) {
-    printDesign();
-    int choice;
+     printDesign();
+     int choice;
      registerUser();
      loginUser();
 
@@ -35,7 +35,6 @@ int main(void) {
             case 2:
                 place_order();
                 break;
-
             case 3:
                 generate_bill();
                 break;
